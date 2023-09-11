@@ -15,17 +15,43 @@ a {
 }
 :root {
     --primary-color: rgba(16, 55, 92, 1);
+    --accent-color: rgba(46, 128, 206, 1);
+    --secondary-color: rgba(255, 255, 255, 1);
 }
 .container {
     width: 1140px;
     max-width: calc(100%-48px);
     margin: 0 auto;
 }
+.btn {
+    --height: 60px;
+    display: inline-block;
+    min-width: 104px;
+    height:var(--height);
+    padding: 0px 30px;
+    border-radius: 30px;
+    background-color: var(--accent-color);
+    line-height:var(--height);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.btn:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
 
  /* Header */
 .header {
     min-height: 100vh;
     background: var(--primary-color);
+    padding-top: 30px;
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     font-size: 1rem;
@@ -66,4 +92,87 @@ a {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+/* Navbar */
+.navbar__list {
+    display: flex;
+    gap: 18px;
+}
+.navbar__link, .login-btn {
+    color: rgba(201, 210, 218, 1);
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 6px 12px;
+}
+.navbar__link--active,.login-btn:hover,
+.navbar__link:hover { 
+    text-shadow: 1px 0 0 white;
+}
+.navbar__link--active::before { 
+    position: relative;
+    display: inline-block;
+    content: " "; 
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: -8px;
+    top: -2px;
+}
+.sign-up-btn {
+    border-radius: 22px;
+    --height:44px;
+    min-width: 104px;
+}
+/* Hero */
+.hero-wrap {
+    display: flex;
+    margin-top: 76px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__content { 
+    width: 50%;
+    flex-shrink: 0;
+}
+.content__header {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 8rem;
+    color: #fff;
+}
+.content__desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: rgba(201, 210, 218, 1);
+}
+.content__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+.content__phone {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+}
+.hero__images {
+    display: flex;
+    align-items: center;
+}
+.hero-img{
+    height: 540px;
+    width: 330px;
+    object-fit: cover;
+}
+.hero-img:last-child {
+    width: 210px;
+    height: 410px;
+}
+.hero-img:first-child {
+    position: relative;
+    margin-right: -6px;
 }
