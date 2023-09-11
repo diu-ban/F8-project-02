@@ -44,14 +44,19 @@ a {
 
  /* Header */
 .header {
-    min-height: 100vh;
     background: var(--primary-color);
-    padding-top: 30px;
+    padding: 38px 0 38px;
+    position: fixed;
+    background-color: var(--primary-color);
+    /* overflow: hidden; */
+    z-index: 1;
+    width: 100%;
 }
 .top-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    
 }
 .logo {
     font-size: 1rem;
@@ -124,12 +129,20 @@ a {
     --height:44px;
     min-width: 104px;
 }
+
 /* Hero */
 .hero-wrap {
+    height: 100vh;
     display: flex;
-    margin-top: 76px;
+    padding-top: 38px;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--primary-color);
+}
+.hero-wrap .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .hero__content { 
     width: 50%;
