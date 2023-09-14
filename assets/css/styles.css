@@ -21,7 +21,7 @@ a {
 }
 .container {
     width: 1140px;
-    max-width: calc(100%-48px);
+    max-width: calc(100% - 48px); ;  
     margin: 0 auto;
 }
 .btn {
@@ -577,11 +577,7 @@ a {
     margin-top: 20px;
     color: rgba(169, 179, 187, 1);
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 1.75;
-}
-.footer-list{
-    margin-bottom: 28px;
 }
 .footer-list__heading {
     margin-bottom: 20px;
@@ -590,11 +586,13 @@ a {
     font-size: 1.6rem;
     line-height: 1.75;
 }
+.footer-list{
+    margin-bottom: 28px;
+}
 .footer-link {
     color: rgba(169, 179, 187, 1);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.85;
+    font-size: 1.4rem;
+    line-height: 1.86;
     white-space: nowrap;
 }
 .footer-list-item {
@@ -603,6 +601,7 @@ a {
 .footer-social-wrap {
     display: flex;
     gap: 10px;
+    margin-bottom: 28px;
 }
 .footer-social-btn {
     display: flex;
